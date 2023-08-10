@@ -1,11 +1,11 @@
-runtime: python310  # La versión de Python que estás utilizando
+runtime: python310  
 
 handlers:
 - url: /static
-  static_dir: static  # Ruta a tus archivos estáticos (CSS, JavaScript, imágenes, etc.)
+  static_dir: static  
 
 - url: /.*
-  script: auto  # Esto indica que la solicitud será manejada por tu aplicación Flask
+  script: auto 
 
 env_variables:
-  FLASK_APP: "app.py"  # El nombre de tu archivo principal de Flask
+  FLASK_APP: "app.py"  
